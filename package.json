@@ -1,0 +1,16 @@
+{
+  "name": "patterns",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "singleton": "ts-node src/singleton.ts"
+  },
+  "author": "Ilya Chernetsky <ilya.chernetsky@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}
