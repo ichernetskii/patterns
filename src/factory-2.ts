@@ -8,11 +8,11 @@ interface CarModels {
 
 class Auto {
     constructor(
-        protected model: string,
-        protected price: number,
+        private model: string,
+        private price: number,
     ) {}
 
-    get label() {
+    protected get label() {
         return `${this.model}: $${this.price.toLocaleString()}`;
     }
 }
@@ -46,12 +46,12 @@ class CarFactory {
     }
 }
 
-const factory2 = new CarFactory();
+const factory = new CarFactory();
 const cars = [
-    factory2.create("Audi", "Q7", 100000),
-    factory2.create("Mercedes", "GL", 80000),
-    factory2.create("Audi", "R8", 150000),
-    factory2.create("Mercedes", "A100", 30000)
+    factory.create("Audi", "Q7", 100000),
+    factory.create("Mercedes", "GL", 80000),
+    factory.create("Audi", "R8", 150000),
+    factory.create("Mercedes", "A100", 30000)
 ];
 
 cars.forEach(car => {

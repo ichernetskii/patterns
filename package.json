@@ -12,5 +12,6 @@
   "dependencies": {
     "ts-node": "^10.2.1",
     "typescript": "^4.4.3"
-  }
+  },
+  "packageManager": "yarn@3.8.1+sha256.860bab3ca20acc0476b3229f4841674e62e15453bd8f5dc8d0fea399edd235b6"
 }
